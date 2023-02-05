@@ -51,12 +51,18 @@
 
         .card:hover {
             opacity: 1;
-            filter: invert(1);
+            background-color: white;
+            color: black;
             transition-delay: 0s;
             transition-duration: 1s;
             transition-timing-function: linear;
             scale: 1.05;
 
+        }
+
+        .card[data-state="1"] {
+            background-color: chartreuse;
+            color: black;
         }
     </style>
 </head>
@@ -67,6 +73,28 @@
 
     </div>
     <script>
+        function prevSiblings(target) {
+            var siblings = [], n = target;
+            while (n = n.previousElementSibling) siblings.push(n);
+            return siblings;
+        }
+
+        function nextSiblings(target) {
+            var siblings = [], n = target;
+            while (n = n.nextElementSibling) siblings.push(n);
+            return siblings;
+        }
+
+        function siblings(target) {
+            var prev = prevSiblings(target) || [],
+                next = nextSiblings(target) || [];
+            return prev.concat(next);
+        }
+        function deselect(target) {
+            for (let i = 0; i < target.length; i++) {
+                target[i].dataset.state = -1;
+            }
+        }
         function createCard() {
             let title = document.createElement('div');
             title.className = 'title';
@@ -75,6 +103,11 @@
             contents.className = 'contents';
             contents.innerHTML = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, minus! Nisi odit dicta quaerat culpa quasi dignissimos! Quo, non voluptates dolores pariatur ipsum rem ut quasi maiores, iste amet veritatis.`;
             let card = document.createElement('div')
+            card.dataset.state = -1;
+            card.addEventListener('click', function (e) {
+                deselect(siblings(e.target));
+                e.target.dataset.state = e.target.dataset.state * -1;
+            })
             card.className = 'card';
             card.appendChild(title);
             card.appendChild(contents);
