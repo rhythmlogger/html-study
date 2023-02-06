@@ -56,10 +56,6 @@
         radioElements[idx].checked = true;
         console.log(idx);
         idx++;
-        // if (idx == radioElements.length) {
-        //     clearInterval(th);
-        //     console.log(idx);
-        // }
         idx = idx % 16;
     }, 250);
     document.body.addEventListener('keydown', function (e) {
