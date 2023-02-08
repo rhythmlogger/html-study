@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chaptre_5</title>
     <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet" type="text/css" />
+    <!--초기화-->
     <style>
         * {
             margin: 0;
@@ -28,12 +29,14 @@
         img {
             border: 0;
         }
-
+    </style>
+    <!--헤더-->
+    <style>
         #main_header {
             width: 960px;
             height: 160px;
             position: relative;
-            margin: 0 auto;
+            margin: 15px auto;
         }
 
         #main_header>#title {
@@ -53,11 +56,15 @@
             right: 0;
             bottom: 0;
         }
-
+    </style>
+    <!--타이틀-->
+    <style>
         #title {
             font-family: 'Coiny', cursive;
         }
-
+    </style>
+    <!--메뉴1-->
+    <style>
         #main_gnb>ul {
             overflow: hidden;
         }
@@ -84,7 +91,9 @@
         #main_gnb>ul>li:last-child>a {
             border-radius: 0 10px 10px 0;
         }
-
+    </style>
+    <!--메뉴2-->
+    <style>
         #main_lnb>ul {
             overflow: hidden;
         }
@@ -111,18 +120,13 @@
         #main_lnb>ul>li:last-child>a {
             border-radius: 0 10px 10px 0;
         }
-
+    </style>
+    <!--콘텐츠-->
+    <style>
         #content {
             width: 960px;
             margin: 10px auto;
             overflow: hidden;
-        }
-
-        #main_section>article.main_article {
-            margin-bottom: 10px;
-
-            padding: 20px;
-            border: 1px solid black;
         }
 
         #content>#main_section {
@@ -134,7 +138,18 @@
             width: 200px;
             float: right;
         }
+    </style>
+    <!--본문-->
+    <style>
+        #main_section>article.main_article {
+            margin-bottom: 10px;
 
+            padding: 20px;
+            border: 1px solid black;
+        }
+    </style>
+    <!--사이드 탭바 -->
+    <style>
         section.buttons {
             overflow: hidden;
         }
@@ -209,6 +224,9 @@
             background-color: white;
             color: black;
         }
+    </style>
+    <style>
+
     </style>
 </head>
 
@@ -325,82 +343,98 @@
             </section>
             <div class="tab_item">
                 <ul>
-                    <li class="item"><a href="#">
-                            <div class="thumbnail"><img src="http://placehold.it/45x45" />
-
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" />
                             </div>
-                            <div class="description"><strong>HTML5 Video</strong>
+                            <div class="description">
+                                <strong>HTML5 Video</strong>
                                 <p>2012-03-15</p>
                             </div>
-
-                        </a></li>
-                    <li class="item"><a href="#">
-                            <div class="thumbnail"><img src="http://placehold.it/45x45" />
-
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" />
                             </div>
-                            <div class="description"><strong>HTML Audio</strong>
+                            <div class="description">
+                                <strong>HTML Audio</strong>
                                 <p>2012-03-15</p>
                             </div>
-
-                        </a></li>
-                    <li class="item"><a href="#">
-                            <div class="thumbnail"><img src="http://placehold.it/45x45" />
-
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" />
                             </div>
-                            <div class="description"><strong>HTML5 Canvas</strong>
+                            <div class="description">
+                                <strong>HTML5 Canvas</strong>
                                 <p>2012-03-15</p>
                             </div>
-
-                        </a></li>
-                    <li class="item"><a href="#">
-                            <div class="thumbnail"><img src="http://placehold.it/45x45" />
-
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" />
                             </div>
-                            <div class="description"><strong>HTML5 Semantic Web</strong>
+                            <div class="description">
+                                <strong>HTML5 Semantic Web</strong>
                                 <p>2012-03-15</p>
                             </div>
-
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="tab_item">
                 <ul>
-                    <li class="item"><a href="#">
-                            <div class="thumbnail"><img src="http://placehold.it/45x45" />
-
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" />
                             </div>
-                            <div class="description"><strong>CSS3 Transition</strong>
+                            <div class="description">
+                                <strong>CSS3 Transition</strong>
                                 <p>2012-03-15</p>
                             </div>
-
-                        </a></li>
-                    <li class="item"><a href="#">
-                            <div class="thumbnail"><img src="http://placehold.it/45x45" />
-
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" />
                             </div>
-                            <div class="description"><strong>CSS3 Animation</strong>
+                            <div class="description">
+                                <strong>CSS3 Animation</strong>
                                 <p>2012-03-15</p>
                             </div>
-
-                        </a></li>
-                    <li class="item"><a href="#">
-                            <div class="thumbnail"><img src="http://placehold.it/45x45" />
-
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" />
                             </div>
-                            <div class="description"><strong>CSS3 Border</strong>
+                            <div class="description">
+                                <strong>CSS3 Border</strong>
                                 <p>2012-03-15</p>
                             </div>
-
-                        </a></li>
-                    <li class="item"><a href="#">
-                            <div class="thumbnail"><img src="http://placehold.it/45x45" />
-
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" />
                             </div>
-                            <div class="description"><strong>CSS3 Box</strong>
+                            <div class="description">
+                                <strong>CSS3 Box</strong>
                                 <p>2012-03-15</p>
                             </div>
-
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </aside>
