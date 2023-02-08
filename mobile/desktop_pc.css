@@ -7,10 +7,10 @@
 }
 
 .head {
-    background-image: url("https://picsum.photos/id/684/600/400");
+    background-image: url("https://picsum.photos/id/4/600/200");
     background-repeat: no-repeat;
-    width: 800px;
-    height: 264px;
+    width: 600px;
+    height: 300px;
 }
 
 .head h1 {
@@ -19,13 +19,13 @@
 
 .entries {
     float: left;
-    width: 680px;
+    width: 450px;
 }
 
 .sidebar {
     float: left;
     text-align: right;
-    width: 100px;
+    width: 200px;
     margin-left: 20px;
 }
 
